@@ -1,0 +1,42 @@
+FLORA PAROBÉ — COMO EDITAR SEM COMPLICAÇÃO
+
+1) Abra a pasta do site.
+2) Entre na pasta "js".
+3) Clique com o botão direito em "site-config.js" > Abrir com > Bloco de Notas.
+4) Edite SOMENTE o texto entre aspas.
+5) Salve com Ctrl+S.
+6) Volte ao navegador e pressione Ctrl+F5.
+
+O QUE VOCÊ EDITA EM js/site-config.js
+- telefone e WhatsApp
+- Instagram e Facebook
+- endereço e cidade
+- nome, categoria e descrição dos produtos
+- preço
+- imagem do produto
+- vídeo do produto
+
+EXEMPLO DE PREÇO
+price: "R$ 89,90",
+
+EXEMPLO DE VÍDEO
+1) copie o vídeo para a pasta assets
+2) renomeie, por exemplo, para video-caneca.mp4
+3) altere:
+video: "assets/video-caneca.mp4"
+
+EXEMPLO DE NOVA FOTO
+1) copie a foto para a pasta assets
+2) renomeie, por exemplo, para vela-vermelha.jpg
+3) altere:
+image: "assets/vela-vermelha.jpg"
+
+PÁGINAS
+index.html = início
+loja.html = catálogo
+sobre.html = sobre nós
+contato.html = contato
+
+TEXTOS LONGOS DA HOME E DO SOBRE NÓS
+Esses textos ficam diretamente em index.html e sobre.html.
+Se preferir, envie a alteração no ChatGPT e eu faço para você.
