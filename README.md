@@ -1,3 +1,3 @@
 # Flora Parobé
 
-Site institucional e catálogo da Flora Parobé.
+Site oficial da Flora Parobé — artigos religiosos para Umbanda e Candomblé.
