@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#f7ead5"/><stop offset="1" stop-color="#e9c98f"/></linearGradient></defs>
+  <rect width="800" height="600" fill="url(#g)"/>
+  <circle cx="400" cy="240" r="90" fill="#c9871f" opacity=".18"/>
+  <path d="M350 245c30-85 70-85 100 0-35 20-65 20-100 0z" fill="#8b4d14" opacity=".75"/>
+  <text x="400" y="390" text-anchor="middle" font-family="Georgia,serif" font-size="38" fill="#4b2a14">Flora Parobé</text>
+  <text x="400" y="435" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" fill="#6b4a2c">Imagem do produto</text>
+</svg>
