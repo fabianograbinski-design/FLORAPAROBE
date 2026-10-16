@@ -28,7 +28,7 @@ const cfg = {
     },
     {
       id: 2,
-      name: "Bebe Orixa Xango",
+      name: "Bebe Orixa Obá",
       category: "Imagens Religiosas",
       description: "Peça decorativa com vestimenta especial, rica em detalhes, ideal para coleção, presente ou decoração.",
       price: "R$ 299,00",
