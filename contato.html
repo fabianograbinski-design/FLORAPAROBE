@@ -1,3 +1,30 @@
 <!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Contato | Flora Parobé</title><link rel="stylesheet" href="css/style.css"></head><body><div id="header"></div>
 <section class="page-hero"><div class="container"><h1 class="section-title" style="font-size:52px">Fale com a Flora Parobé</h1><p style="font-size:20px">Dúvidas, disponibilidade de produtos, pedidos e atendimento.</p></div></section>
-<section class="section"><div class="container contact-grid"><div class="contact-card"><h2 class="section-title">Contato</h2><p><strong>WhatsApp:</strong> <span id="phone"></span></p><p><strong>Instagram:</strong> <span id="insta"></span></p><p><strong>Endereço:</strong> <span id="address"></span></p><p><strong>Cidade:</strong> <span id="city"></span></p><a class="btn btn-gold" data-wa>☏ Falar no WhatsApp</a><div class="notice">Atendimento direto pelo WhatsApp para dúvidas, pedidos e disponibilidade de produtos.</div></div><div class="contact-card"><h2 class="section-title">Envie uma mensagem</h2><form id="contactForm"><label>Nome<input id="contactName" required></label><br><label>Telefone<input id="contactPhone"></label><br><label>Mensagem<textarea id="contactMessage" rows="6" required></textarea></label><br><button class="btn btn-gold" type="submit">Enviar pelo WhatsApp</button></form></div></div></section><div id="footer"></div><script src="js/site-config.js"></script><script src="js/site.js"></script><script>document.querySelector('#header').innerHTML=header('contato');document.querySelector('#footer').innerHTML=footer();document.querySelector('#phone').textContent=cfg.business.phoneDisplay;document.querySelector('#insta').textContent=cfg.business.instagram;document.querySelector('#address').textContent=cfg.business.address;document.querySelector('#city').textContent=cfg.business.city;bindCommon();document.querySelector('#contactForm').addEventListener('submit',function(e){e.preventDefault();const nome=document.querySelector('#contactName').value.trim();const telefone=document.querySelector('#contactPhone').value.trim();const mensagem=document.querySelector('#contactMessage').value.trim();const texto=['Olá, Flora Parobé!','',`Nome: ${nome}`,telefone?`Telefone: ${telefone}`:'',`Mensagem: ${mensagem}`].filter(Boolean).join('\n');window.open(`https://wa.me/${cfg.business.phoneDigits}?text=${encodeURIComponent(texto)}`,'_blank');});</script></body></html>
+<section class="section"><div class="container">
+<div class="contact-grid" style="align-items:stretch">
+  <div class="contact-card" style="padding:0;overflow:hidden;min-height:420px">
+    <iframe id="mapFrame" title="Localização da Flora Parobé" style="width:100%;height:100%;min-height:420px;border:0;display:block" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <div class="contact-card">
+    <h2 class="section-title">Visite a Flora Parobé</h2>
+    <p style="font-size:17px;line-height:1.55"><strong>Endereço</strong><br><span id="address"></span></p>
+    <p><strong>Cidade:</strong> <span id="city"></span></p>
+    <p style="margin:22px 0"><a id="routeBtn" class="btn btn-gold" target="_blank" rel="noopener">📍 Como chegar</a></p>
+    <hr style="border:0;border-top:1px solid #ead8ba;margin:24px 0">
+    <p><strong>WhatsApp:</strong> <span id="phone"></span></p>
+    <p><strong>Instagram:</strong> <a id="instagramLink" target="_blank" rel="noopener" style="color:#b96e00;font-weight:700;text-decoration:none"><span id="insta"></span></a></p>
+    <p><a class="btn btn-outline" data-wa>☏ Falar no WhatsApp</a></p>
+    <div class="notice">Atendimento direto pelo WhatsApp para dúvidas, pedidos e disponibilidade de produtos.</div>
+  </div>
+</div>
+
+<div class="contact-card" style="margin-top:26px">
+  <h2 class="section-title">Envie uma mensagem</h2>
+  <form id="contactForm">
+    <label>Nome<input id="contactName" required></label><br>
+    <label>Telefone<input id="contactPhone"></label><br>
+    <label>Mensagem<textarea id="contactMessage" rows="6" required></textarea></label><br>
+    <button class="btn btn-gold" type="submit">Enviar pelo WhatsApp</button>
+  </form>
+</div>
+</div></section><div id="footer"></div><script src="js/site-config.js"></script><script src="js/site.js"></script><script>document.querySelector('#header').innerHTML=header('contato');document.querySelector('#footer').innerHTML=footer();document.querySelector('#phone').textContent=cfg.business.phoneDisplay;document.querySelector('#insta').textContent=cfg.business.instagram;document.querySelector('#address').textContent=cfg.business.address;document.querySelector('#city').textContent=cfg.business.city;document.querySelector('#mapFrame').src='https://www.google.com/maps?q='+encodeURIComponent(cfg.business.address)+'&output=embed';document.querySelector('#routeBtn').href='https://www.google.com/maps/dir/?api=1&destination='+encodeURIComponent(cfg.business.address);document.querySelector('#instagramLink').href='https://www.instagram.com/'+cfg.business.instagram.replace('@','');bindCommon();document.querySelector('#contactForm').addEventListener('submit',function(e){e.preventDefault();const nome=document.querySelector('#contactName').value.trim();const telefone=document.querySelector('#contactPhone').value.trim();const mensagem=document.querySelector('#contactMessage').value.trim();const texto=['Olá, Flora Parobé!','',`Nome: ${nome}`,telefone?`Telefone: ${telefone}`:'',`Mensagem: ${mensagem}`].filter(Boolean).join('\n');window.open(`https://wa.me/${cfg.business.phoneDigits}?text=${encodeURIComponent(texto)}`,'_blank');});</script></body></html>
