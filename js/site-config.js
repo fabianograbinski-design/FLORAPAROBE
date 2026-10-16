@@ -11,7 +11,7 @@ const cfg = {
     phoneDigits: "555199889444",
     instagram: "@floraparobe",
     facebook: "/floraparobe",
-    address: "Av. Júlio de Castilhos, 31 - Lj 4 - Centro Histórico, Porto Alegre - RS, 90030-131",
+    address: "Av. Júlio de Castilhos, 31 - Lj 18 - Centro Histórico, Porto Alegre - RS, 90030-131",
     city: "Porto Alegre - RS",
     hours: "09:00 ás 19:00"
   },
