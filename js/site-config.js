@@ -33,7 +33,7 @@ const cfg = {
       description: "Peça decorativa com vestimenta especial, rica em detalhes, ideal para coleção, presente ou decoração.",
       price: "R$ 299,00",
       image: "boneca-marrom.jpg",
-      video: "assets/video-oba.mp4"
+      video: "assets/video-oba.mp4.mp4"
     },
     {
       id: 3,
