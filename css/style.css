@@ -10,3 +10,15 @@
 .shop-hero.shop-hero--image .container{width:min(1342px,92%)}
 .hero-banner-img{display:block;width:100%;height:auto;border-radius:10px;box-shadow:0 6px 18px rgba(41,20,7,.12)}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* Promoção do mês */
+.promo-month{padding:18px 0 4px}
+.promo-month-box{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:24px 28px;border-radius:14px;background:linear-gradient(110deg,#3b1d0d 0%,#6b350f 58%,#d9951c 100%);box-shadow:0 8px 24px rgba(65,32,8,.16);color:#fff;overflow:hidden;position:relative}
+.promo-month-box:after{content:"";position:absolute;right:-55px;top:-75px;width:220px;height:220px;border-radius:50%;background:rgba(255,255,255,.09)}
+.promo-month-copy{position:relative;z-index:1}
+.promo-kicker{display:inline-block;font-size:12px;font-weight:800;letter-spacing:1.5px;color:#ffd98a;margin-bottom:7px}
+.promo-month h2{font:700 34px Georgia,serif;margin:0 0 6px;color:#fff}
+.promo-month p{margin:0;max-width:700px;line-height:1.5;color:#fff7e9}
+.promo-month-btn{position:relative;z-index:1;display:inline-block;flex:0 0 auto;background:#fff;color:#5b2b0c;text-decoration:none;font-weight:800;padding:14px 20px;border-radius:9px;box-shadow:0 4px 12px rgba(0,0,0,.12)}
+.promo-month-btn:hover{transform:translateY(-1px)}
+@media(max-width:700px){.promo-month-box{display:block;padding:22px}.promo-month h2{font-size:29px}.promo-month-btn{margin-top:16px}}
