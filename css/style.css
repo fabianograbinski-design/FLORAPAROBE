@@ -22,3 +22,6 @@
 .promo-month-btn{position:relative;z-index:1;display:inline-block;flex:0 0 auto;background:#fff;color:#5b2b0c;text-decoration:none;font-weight:800;padding:14px 20px;border-radius:9px;box-shadow:0 4px 12px rgba(0,0,0,.12)}
 .promo-month-btn:hover{transform:translateY(-1px)}
 @media(max-width:700px){.promo-month-box{display:block;padding:22px}.promo-month h2{font-size:29px}.promo-month-btn{margin-top:16px}}
+
+.promo-month-art-link{display:block;text-decoration:none}
+.promo-month-art{display:block;width:100%;height:auto;border-radius:14px;box-shadow:0 8px 24px rgba(65,32,8,.18)}
