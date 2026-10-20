@@ -25,3 +25,8 @@
 
 .promo-month-art-link{display:block;text-decoration:none}
 .promo-month-art{display:block;width:100%;height:auto;border-radius:14px;box-shadow:0 8px 24px rgba(65,32,8,.18)}
+
+.promo-buy-wrap{text-align:center;margin:18px 0 4px}
+.promo-buy-btn{display:inline-block;background:#198754;color:#fff;text-decoration:none;font-weight:800;font-size:18px;padding:14px 24px;border-radius:10px;box-shadow:0 5px 16px rgba(0,0,0,.14);transition:transform .15s ease,box-shadow .15s ease}
+.promo-buy-btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.18)}
+.promo-buy-note{font-size:14px;color:#6e6259;margin:10px 0 0}
