@@ -1,3 +1,6 @@
+function trackGaEvent(name, params){
+  if (typeof gtag === 'function') gtag('event', name, params || {});
+}
 function waLink(productName=''){
   const msg = encodeURIComponent(productName ? `Olá! Gostaria de saber mais sobre: ${productName}` : 'Olá! Gostaria de falar com a Flora Parobé.');
   return `https://wa.me/${cfg.business.phoneDigits}?text=${msg}`;
@@ -13,8 +16,24 @@ function productCard(p){
   return `<article class="product-card"><img src="${p.image}" alt="${p.name}"><div class="product-body"><h3>${p.name}</h3><p>${p.description}</p><strong class="price">${p.price}</strong><div class="product-actions"><button class="btn btn-gold video-btn" data-id="${p.id}">▶ Vídeo do Produto</button><a class="btn btn-outline" href="${waLink(p.name)}" target="_blank">WhatsApp</a></div></div></article>`;
 }
 function bindCommon(){
-  document.querySelectorAll('[data-wa]').forEach(el=>{el.href=waLink(); el.target='_blank';});
-  document.querySelectorAll('.video-btn').forEach(btn=>btn.onclick=()=>openVideo(Number(btn.dataset.id)));
+  document.querySelectorAll('[data-wa]').forEach(el=>{
+    el.href=waLink(); el.target='_blank';
+    if(!el.dataset.gaBound){el.dataset.gaBound='1';el.addEventListener('click',()=>trackGaEvent('whatsapp_click',{source:'geral',page_path:location.pathname}));}
+  });
+  document.querySelectorAll('.product-card a[href*="wa.me"]').forEach(el=>{
+    if(!el.dataset.gaBound){el.dataset.gaBound='1';el.addEventListener('click',()=>{
+      const name=el.closest('.product-card')?.querySelector('h3')?.textContent||'';
+      trackGaEvent('whatsapp_click',{source:'produto',product_name:name,page_path:location.pathname});
+    });}
+  });
+  document.querySelectorAll('.promo-buy-btn').forEach(el=>{
+    if(!el.dataset.gaBound){el.dataset.gaBound='1';el.addEventListener('click',()=>trackGaEvent('promo_purchase_click',{promotion_name:'Saias de Cetim - R$ 35,00',page_path:location.pathname}));}
+  });
+  document.querySelectorAll('.video-btn').forEach(btn=>btn.onclick=()=>{
+    const id=Number(btn.dataset.id);const p=cfg.products.find(x=>x.id===id);
+    trackGaEvent('product_video_click',{product_name:p?p.name:'',product_id:String(id),has_video:!!(p&&p.video),page_path:location.pathname});
+    openVideo(id);
+  });
   const close=document.querySelector('.modal-close'); if(close) close.onclick=closeVideo;
   const modal=document.querySelector('#videoModal'); if(modal) modal.onclick=e=>{if(e.target===modal) closeVideo();};
 }
