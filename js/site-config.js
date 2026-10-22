@@ -57,6 +57,6 @@ const cfg = {
     { id: 6, name: "Incensos e Defumações", category: "Incensos e Defumações", description: "Opções para limpeza, proteção e bem-estar.", price: "Preço R$ 19,00 Pacote com 10", image: "incensos.jpg.jpg", video: "" },
     { id: 7, name: "Roupas e Capas Religiosas", category: "Roupas e Capas", description: "Peças e capas para diversas nações e tradições.", price: "Promoção R$ 120,00", image: "Capas.png", video: "" },
     { id: 8, name: "Cerâmicas e Presentes", category: "Cerâmicas e Presentes", description: "Louça IBA de LUXO Iansa", price: "R$ 790,00", image: "assets/Conjunto%20de%20cer%C3%A2micas%20religiosas%20de%20Ians%C3%A3.png", video: "" },
-    { id: 9, name: "Vela Decorativa Rechaud - 6 unidades", category: "Velas", description: "Lindas velinhas redondas para decoração, com duração aproximada de 6 horas.", price: "R$ 8,00 a unidade • 12 dúzias: R$ 6,90 a unidade", image: "assets/vela-rechaud-site.jpg", video: "" }
+    { id: 9, name: "Vela Decorativa Rechaud - 6 unidades", category: "Velas", description: "Lindas velinhas redondas para decoração, com duração aproximada de 6 horas.", price: "R$ 8,00 a unidade • 12 dúzias: R$ 6,90 a unidade", image: "assets/vela-rechaud-site.jpg", video: "assets/video-vela-rechaud.mp4" }
   ]
 };
