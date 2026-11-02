@@ -26,7 +26,7 @@ function bindCommon(){
       trackGaEvent('whatsapp_click',{source:'produto',product_name:name,page_path:location.pathname});
     });}
   });
-  document.querySelectorAll('.promo-buy-btn').forEach(el=>{
+  document.querySelectorAll('.promo-buy-btn,.promo-track-link').forEach(el=>{
     if(!el.dataset.gaBound){el.dataset.gaBound='1';el.addEventListener('click',()=>trackGaEvent('promo_purchase_click',{promotion_name:'Velas 7 Dias 275g - Combo 4 por R$ 7,90 cada',page_path:location.pathname}));}
   });
   document.querySelectorAll('.video-btn').forEach(btn=>btn.onclick=()=>{
