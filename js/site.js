@@ -27,7 +27,7 @@ function bindCommon(){
     });}
   });
   document.querySelectorAll('.promo-buy-btn').forEach(el=>{
-    if(!el.dataset.gaBound){el.dataset.gaBound='1';el.addEventListener('click',()=>trackGaEvent('promo_purchase_click',{promotion_name:'Saias de Cetim - R$ 35,00',page_path:location.pathname}));}
+    if(!el.dataset.gaBound){el.dataset.gaBound='1';el.addEventListener('click',()=>trackGaEvent('promo_purchase_click',{promotion_name:'Velas 7 Dias 275g - Combo 4 por R$ 7,90 cada',page_path:location.pathname}));}
   });
   document.querySelectorAll('.video-btn').forEach(btn=>btn.onclick=()=>{
     const id=Number(btn.dataset.id);const p=cfg.products.find(x=>x.id===id);
